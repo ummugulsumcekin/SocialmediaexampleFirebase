@@ -14,7 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var paswordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+      let currentUser = Auth.auth().currentUser
+        if currentUser != nil {
+            self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+            
+        }
+      
     }
 
     @IBAction func signInClick(_ sender: Any) {
@@ -24,9 +31,7 @@ class ViewController: UIViewController {
             Auth.auth().signIn(withEmail: emailText.text!, password: paswordText.text!) { (authdata,error) in
                 
                 if error != nil {
-                
-                self.makeAlert(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Error")
-                
+               
             }else{
                 self.performSegue(withIdentifier: "toFeedVC", sender: nil)
             }
@@ -34,9 +39,11 @@ class ViewController: UIViewController {
             }
             
         }else{
-            makeAlert(titleInput: "Error!", messageInput: "Username/Password?")
+           
             
-    }
+        }
+        
+        
     }
     
     @IBAction func signUpClick(_ sender: Any) {
