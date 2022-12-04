@@ -16,11 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-      let currentUser = Auth.auth().currentUser
-        if currentUser != nil {
-            self.performSegue(withIdentifier: "toFeedVC", sender: nil)
-            
-        }
+      
       
     }
 
@@ -31,6 +27,23 @@ class ViewController: UIViewController {
             Auth.auth().signIn(withEmail: emailText.text!, password: paswordText.text!) { (authdata,error) in
                 
                 if error != nil {
+                    let alert = UIAlertController(title: "Alert", message: error?.localizedDescription ?? "Error" , preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                        switch action.style{
+                            case .default:
+                            print("default")
+                            
+                            case .cancel:
+                            print("cancel")
+                            
+                            case .destructive:
+                            print("destructive")
+                            
+                        
+                        }
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                    
                
             }else{
                 self.performSegue(withIdentifier: "toFeedVC", sender: nil)
