@@ -48,10 +48,12 @@ class UploadViewController: UIViewController ,UIImagePickerControllerDelegate, U
                 (metadata, error) in
                 if error != nil {
                     print(error?.localizedDescription)
-                    
                 }else{
+                   
                     imageReference.downloadURL { (url, error) in
+                       
                         if error == nil {
+                            
                             let imageUrl = url?.absoluteString
                             print(imageUrl)
                         }
