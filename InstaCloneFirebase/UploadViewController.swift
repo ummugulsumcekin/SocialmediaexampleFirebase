@@ -43,7 +43,7 @@ class UploadViewController: UIViewController ,UIImagePickerControllerDelegate, U
         
         if let  data = imageView.image?.jpegData(compressionQuality: 0.5) {
             
-            let imageReference = mediaFolder.child("image.jpg")
+            let imageReference = mediaFolder.child("image.jpeg")
             imageReference.putData(data, metadata: nil) {
                 (metadata, error) in
                 if error != nil {
