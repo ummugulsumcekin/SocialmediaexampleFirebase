@@ -44,6 +44,9 @@ class UploadViewController: UIViewController ,UIImagePickerControllerDelegate, U
         
     }
     @IBAction func actionButtonClicked(_ sender: Any) {
+        
+        
+        
         let storage = Storage.storage()
         let storageReference = storage.reference()
         let mediaFolder = storageReference.child("media")

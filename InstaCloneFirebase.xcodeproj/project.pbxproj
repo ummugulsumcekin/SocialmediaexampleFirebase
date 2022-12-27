@@ -15,6 +15,7 @@
 		D91A2531292E32E700679900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91A2530292E32E700679900 /* Assets.xcassets */; };
 		D91A2534292E32E700679900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A2532292E32E700679900 /* LaunchScreen.storyboard */; };
 		D91A253C292E397B00679900 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D91A253B292E397B00679900 /* GoogleService-Info.plist */; };
+		D9560778295B92590007D480 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9560777295B92590007D480 /* FeedCell.swift */; };
 		D96F8FB4292FB3F200A5A4F2 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F8FB3292FB3F200A5A4F2 /* FeedViewController.swift */; };
 		D96F8FB6292FB40A00A5A4F2 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F8FB5292FB40A00A5A4F2 /* UploadViewController.swift */; };
 		D96F8FB8292FB42100A5A4F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F8FB7292FB42100A5A4F2 /* SettingsViewController.swift */; };
@@ -32,6 +33,7 @@
 		D91A2533292E32E700679900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D91A2535292E32E700679900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91A253B292E397B00679900 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9560777295B92590007D480 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D96F8FB3292FB3F200A5A4F2 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D96F8FB5292FB40A00A5A4F2 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		D96F8FB7292FB42100A5A4F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				D96F8FB3292FB3F200A5A4F2 /* FeedViewController.swift */,
 				D96F8FB5292FB40A00A5A4F2 /* UploadViewController.swift */,
 				D96F8FB7292FB42100A5A4F2 /* SettingsViewController.swift */,
+				D9560777295B92590007D480 /* FeedCell.swift */,
 				D91A252D292E32E700679900 /* Main.storyboard */,
 				D91A2530292E32E700679900 /* Assets.xcassets */,
 				D91A2532292E32E700679900 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9560778295B92590007D480 /* FeedCell.swift in Sources */,
 				D91A252C292E32E700679900 /* ViewController.swift in Sources */,
 				D96F8FB6292FB40A00A5A4F2 /* UploadViewController.swift in Sources */,
 				D91A2528292E32E700679900 /* AppDelegate.swift in Sources */,
